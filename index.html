@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+</head>
+<body>
+    <h1>jartible.es | tienda online </h1>
+    <h2>Ropa pa ustede</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <p>Ropa manufacturada en jere, <span style="color:darkmagenta">andalucía</span>, pa el resto del mundo</p>
+    <!--con la etiqueta span hacemos modificaciones que veremos en detalle en CSS-->
+    <p>Todo lo disponible en nuestra web, instagram. Contacten or privado</p>
+    <hr> <!-- la etiqueta hr es para hacer aparecer una linea separadora entre los textos escritos arriba y abajo-->
+    <h3>Novedades que llegan en invierno</h3>
+    <p>A partir de diciembre tendremos la coleccion que te prepara para el frio invierno <br> para asi poder cuidarnos frente al fuerte temporal que se avecina esta temporada</p>
+    <!-- Asi se escriben comentarios en html -->
+    <!--La etiqueta br es un salto de linea-->
+    <h3>Ir a <a target = "_blank" href = "https://jartible.es">Jartible</a></h3>
+    <a target = "_blank" href = "https://www.google.com">Ir a google</a>
+    <!-- La etiqueta <a> es para hipervinculos-->
+    <br>
+
+    <img src = "./img/peach" height="100"/>
+
+    <br>
+<!-- UL es unordered list -->
+<!-- LI es list item-->
+<!-- ol es ordered list-->
+    <ul>
+        <li>Camisetas</li>
+        <li>Pantalones</li>
+        <li>Sudaderas</li>
+        <li>Zapatos</li>
+            <ol>
+                <p>Lista ordenada dentro de <B>lista no ordenada</B></p>
+                <li>sub elemento 1</li>
+                <li>sub elemento 2</li>
+                <li>sub elemento 3</li>
+                <li>sub elemento 4</li>
+            </ol>
+    </ul>
+
+    <br>
+
+    <ol>
+        <li value="4">Camisetas</li>
+        <li>Pantalones</li>
+        <li>Sudaderas</li>
+        <li>Zapatos</li>
+        <ol>
+            <p>Lista ordenada dentro <B>lista ordenada</B></p>
+            <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+            <li style="list-style-type: lower-roman;">sub elemento 2</li>
+            <li style="list-style-type: lower-latin;">sub elemento 3</li>
+            <li style="list-style-type: lower-greek;">sub elemento 4</li>
+        </ol>
+    </ol>
+    <br>
+
+    <form action = "/formulario" method = "POST">
+        <label for = "nombre">Nombre</label>
+        <input value = "Jesús" id = "nombre" name = "nombre" placeholder="Introduce nombre" type = "text"/> <!--Para introducir texto-->
+        <br>
+        <label for = "apellido">Apellido</label>
+        <input value = "García" id = "apellido" name = "apellido" placeholder="Introduce apellido" type = "text"/> <!--Para introducir texto-->
+        <br>
+        <h4><label for = "comentario">Comentario</label></h4>
+        <textarea cols = "50" rows = "10" id = "comentario" name = "comentario" placeholder = "Ingrese un comentario" >Valor por defecto</textarea>
+        <br>
+        <button type = "submit">Enviar</button>
+        <button type = "button">tipo boton</button>
+        <button type = "reset">tipo reset</button>
+    </form>
+</body>
+</html>
