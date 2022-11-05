@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <meta charset="UFT-8">
     <title>Document</title>
     <style>
-        h1, img, footer { 
+        h1, img, footer, video { 
             border: 2px solid black;
+            background-color: beige;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 style="color: rgb(0, 0, 0);">zustuff</h1>
+        <h1 id="titulo" style="color: rgb(0, 0, 0);">zustuff</h1>
     </header>
     <section>
-        <article> <!-- Define contenido independiente: una noticia, un tweet, una imagen de IG, un post de facebook-->
+        <video controls width="500">
+            <source src="./Beautiful-Kitten-Meowing-_-Hermoso-Gatito-Maullando-Adorable-Cute.ogv">
+        </video>
+        <p>Es un gatito petenio y grita como un gritón. Se llama <b>Jerry</b>.
+             Dile hola a tu muchi maría.</p>
+        <form action="/formulario" method="POST">
+            <label for="opinion"><b>Opina aquí: </b></label>
+            <br>
+            <textarea id="opinion" name="opinion" rows="10" cols="50" placeholder="Escribe tu opinión del gatito gritón. Será anónima"></textarea>
+            <br>
+            <input type="submit" id="boton" name="boton" placeholder="Enviar"/>
+            <button type="button">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <article class="post"> <!-- Define contenido independiente: una noticia, un tweet, una imagen de IG, un post de facebook-->
             <h2 style="color: rgb(0, 0, 0);">mis cozitas</h2>
             <p>En este blog iré añadiendo el contenido en el que me estoy centrando, actualizándolo <b>día a día</b> para que sigáis conmigo el progreso en mi carrera y aprendizaje a donde sea que voy. 
                 Actualmente estoy ingeniería informática y en las asignaturas de este curso estoy aprendiendo SQL para el manejo de Bases de Datos, C++ y C. 
                 Hace una semana empecé a informarme sobre HTML y aquí estamos.</p>
-            <img src="./vans.jpeg" width="600"/>
+            <img id="nosotros" src="./vans.jpeg" width="600"/>
             <p>Recuerdo del día que empezó a forjarse todo de nuevo, porque sí.</p>
         <!-- comentario-->
         <!-- Secciones-->
         </article>
-        <article> <!-- Define contenido independiente: una noticia, un tweet, una imagen de IG, un post de facebook-->
+        <article class="post"> <!-- Define contenido independiente: una noticia, un tweet, una imagen de IG, un post de facebook-->
             <h2 style="color: rgb(0, 0, 0);">mis cozitas: en profundidad</h2>
             <p>De aquí en adelante daré más detalles sobre el contenido concreto que ando revisando a día de hoy.
                 <ul>
@@ -41,7 +59,9 @@
         </article>
     </section>
     <footer>
-        <a href="mailto:jesusgarciaflt@gmail.com">jesusgarciaflt@gmail.com</a>
+        Copyright - ZUSTUFFCompany 2022 -
+        <a href="#titulo">Ir al comienzo</a> <!-- Usando atributo ID podemos redireccionar -->
+        Contacte con nosotros: <a href="mailto:jesusgarciaflt@gmail.com">jesusgarciaflt@gmail.com</a>
         <a target="_blank" href="https://www.twitter.com/zusrico">twitter</a>
         <a target="_blank" href="https://www.instagram.com/zusrico">instagram</a>
     </footer>
